@@ -16,7 +16,7 @@ export const resgister = async (req, res) => {
       data: {
         name,
         email,
-        passwrd: hashedPassword,
+        password: hashedPassword,
       },
     });
     const token = jwt.sign(
