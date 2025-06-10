@@ -1,12 +1,24 @@
+import { Route,Routes } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     
-    </>
-  )
+      <Routes>
+        {/* Login Page */}
+        <Route path="/login" element={<Login />} />
+
+        {/* Register Page */}
+        <Route path="/register" element={<Register />} />
+
+        <Route
+          path="*"
+          element={
+            <h1 className="text-center mt-10 text-xl">404 - Page Not Found</h1>
+          }
+        />
+      </Routes>
+  );
 }
 
-export default App
+export default App;
