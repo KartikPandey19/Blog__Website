@@ -1,0 +1,15 @@
+body{
+
+}
+
+header{
+        background-image: paint(fleck);
+}
+
+nav ul li{
+    margin-right:12px;
+}
+
+nav ul li :hover{
+    color: orange
+}
