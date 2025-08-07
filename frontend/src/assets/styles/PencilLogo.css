@@ -1,0 +1,38 @@
+.pencil-wrapper {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.pencil {
+  width: 60px;
+  filter: drop-shadow(0 0 2px white); /* helps it pop on black */
+  transition: transform 0.3s ease;
+}
+
+.line {
+  position: absolute;
+  bottom: 10px;
+  left: 100%;
+  height: 2px;
+  background-color: white;  /* visible on black background */
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+/* Hover Effect */
+.pencil-wrapper:hover .pencil {
+  transform: rotate(-10deg);
+  filter: drop-shadow(0 0 2px #f37a02fa);
+}
+
+.logo-text{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.logo-text:hover{
+    color:#ffb86a;
+     text-shadow: 0 0 5px #ffb86a;
+}
